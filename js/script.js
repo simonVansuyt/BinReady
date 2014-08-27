@@ -82,7 +82,7 @@ function ready(){
 
 	// system version span:last
 	
-	$("#build p:last").text(device.platform + "" + device.version);	
+	$("#build p").last().text(device.platform + "" + device.version);	
 
 	// clock animation
 
