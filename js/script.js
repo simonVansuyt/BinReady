@@ -86,7 +86,7 @@ function ready(){
 
 	// clock animation
 
-	setInterval(function(){clockAni()}, 1000);
+	setInterval(function(){clockAni();}, 1000);
 
 	// de start pause resume functie
 
