@@ -266,7 +266,7 @@ function ready(){
 		var number = $(this).val() / 100;
 
 		$("#ulVal").text(number);
-		$(uiEl).css("opacity", number)
+		$(uiEl).css("opacity", number);
 
 	});
 	
