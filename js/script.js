@@ -199,7 +199,7 @@ function ready(){
 
 			alertify.alert("You have to start the watch.");
 
-		}else if(lapText == $("#toeren #tijd:first").text()){
+		}else if(lapText == $("#toeren #tijd").first().text()){
 
 			alertify.alert("You have already a lap whit this time.");
 
