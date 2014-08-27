@@ -8,16 +8,17 @@ function onload(){
 function ready(){
 
 	var $startPause = $("#startPause"),
-		$reset = $("#reset");
+		$reset = $("#reset"),
+		$moreIcon = $("#moreIcon");
 
-	$("#moreIcon").fadeIn(1750);
+	$moreIcon.fadeIn(1750);
 
 	
 	$("#container").show();
 
 	// de more konop functie
 
-	$("#moreIcon").bind("touchstart", function(){
+	$moreIcon.bind("touchstart", function(){
 		$(this).animate({
 			"width": "49px",
 			"margin": "5px"
