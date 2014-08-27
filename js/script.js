@@ -115,7 +115,7 @@ function ready(){
 			"width" : "100px",
 			"height" : "50px",
 			"marginTop" : "0px"
-		}, 100);;
+		}, 100);
 	});
 
 	// de reset functie
