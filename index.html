@@ -1,0 +1,318 @@
+<!DOCTYPE html> 
+<html>
+	<head>
+
+		<!-- de meta's en title -->
+
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, user-scalable=no">
+		<meta name="mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+		<title>BinReady</title>
+		<link rel="icon" type="image/png" href="icon.png">
+	
+		<!-- de style  -->
+
+		<link rel="stylesheet" href="css/normalize.css">
+		<link rel="stylesheet" href="css/roboto.css">
+		<link rel="stylesheet" href="css/style.css">
+		<link rel="stylesheet" href="css/alertify.core.css">
+		<link rel="stylesheet" href="css/alertify.default.css">
+
+		<!-- de javascript -->
+
+		<script src="js/jquery.min.js"></script>
+		<script src="js/script.js"></script>
+		<script src="js/transit.min.js"></script>
+		<script type="text/javascript" charset="utf-8" src="cordova.js"></script>
+		<script src="plugins/org.apache.cordova.device/www/device.js"></script>
+		<script src="BinReady/plugins/com.contentecontent.cordova.plugins.share/www/share.js"></script>
+		<script src="js/SocialSharing.js"></script>
+		<script src="js/alertify.js"></script>
+		
+	</head>
+	<body onload="onload()">
+
+		<!-- de header -->
+
+		<header>
+			<img id="moreIcon" src="img/more.gif" width="56px" alt="">
+			<h1>BinReady</h1>
+		</header>
+		
+		<!-- de more gedeelte -->
+
+		<div id="more">
+			<div id="content">
+				<ul id="setting">
+
+					<!-- settings page -->
+
+					<li class="page"><p>settings</p></li>
+						
+						<div class="ditail" id="settings">
+							<li class="tap">
+								<p>UI</p>
+								<select name="ui" class="color" id="ui">
+
+									<option value="default">default</option>
+									<option value="#e74c3c">red</option>
+									<option value="#d35400">orange</option>
+									<option value="#f1c40f">yellow</option>
+									<option value="#2ecc71">green</option>
+									<option value="#3498db">blue</option>
+									<option value="#9b59b6">purple</option>
+									<option value="#5C59B5">violet</option>
+									<option value="#2c3e50">black</option>
+									<option value="#7f8c8d">gray</option>
+									<option value="#F378EF">pink</option>
+									<option value="#1abc9c">cyan</option>
+
+								</select>
+							</li>
+							<li class="tap">
+								<p>clock</p>
+								<select name="clock" class="color" id="colorClock">
+
+									<option value="default">default</option>
+									<option value="#e74c3c">red</option>
+									<option value="#d35400">orange</option>
+									<option value="#f1c40f">yellow</option>
+									<option value="#2ecc71">green</option>
+									<option value="#3498db">light blue</option>
+									<option value="#185988">dark blue</option>
+									<option value="#9b59b6">purple</option>
+									<option value="#5C59B5">violet</option>
+									<option value="#2c3e50">black</option>
+									<option value="#7f8c8d">gray</option>
+									<option value="#F378EF">pink</option>
+									<option value="#1abc9c">cyan</option>
+
+								</select>
+							</li>
+<!-- 							<li class="tap">
+								<p>UI lighten</p><span class="val" id="uiVal">1</span>
+								<input type="range" min="0" max="100" value="100" id="uilig">
+							</li>
+							<li class="tap">
+								<p>clock blur</p><span class="val" id="blurVal">0px</span>
+								<input type="range" min="0" max="500" value="0" id="blur">
+							</li> -->
+						</div>
+
+					</li>
+
+					<!-- how it works -->
+
+					<li class="page"><p>How it works</p></li>
+					
+					<div class="ditail" id="howitworks">
+						<p>
+							BinReady is a stopwatch that use the BCD clock (Binary-coded decimal clock) to display the time.<br/>
+							
+							<br/><span>How to read:</span><br/>
+							How can i read the time? It's realy easy.
+							The clock is devided in 3 parts: hours, minutes and seconds.
+							Every part has 2 colom's.
+						</p>
+						<img src="img/clock1.png" alt="">
+						<p>
+							Now you can find the hours, minutes and seconds. Now we go a stap further.
+							Every part has 2 columns, the first columns of each part shows the first numbers of your time and the second columns of each part shows the second number.
+							Every line shows a number and the next line shows the double of the previus number.
+							We start by 1 and go up to 8.
+						</p>
+						<img src="img/clock2.png" alt="">
+						<p>
+							Try to ready the time on this clock.
+						</p>
+						<img src="img/clock3.png" alt="">
+						<p>
+							If you answer is 21 hours, 48 minutes and 14 seconds.
+							Your gratulations.
+							Suppose the time is 14 hours, 57 minutes and 6 seconds.
+							You just add these numbers. (see image)<br/>
+							1 = 1 , <br/>
+							4 = 4 , <br/>
+							1 + 4 = 5 , <br/>
+							1 + 2 + 4 = 7 and <br/>
+							2 + 4 = 6 
+						</p>
+						<img src="img/clock4.png" alt="">
+						<p>
+							What's this?
+						</p>
+						<img src="img/clock5.png" alt="">
+						<p>
+							The moste stopwathes give you the tenths seconds.
+							But, on this sort clock's you haven't a colom for thenths seconds.
+							So, I deside to add one. The pricipel is the same.
+						</p>
+						<br/>
+						<br/>
+						<br/>
+						<br/>
+						<br/>
+						<br/>
+						<br/>
+						<br/>
+						<br/>
+						<br/>
+					</div>
+
+					<!-- de build page -->
+
+					<li class="page"><p>build</p></li>
+
+					<div class="ditail" id="build">
+						<li>
+							<span>BinReady version</span>
+							<p>1.0.1</p>
+						</li>
+						<li>
+							<span>Apache Cordova version</span>
+							<p>3.5.0</p>
+						</li>
+						<li>
+							<span>System version</span>
+							<p></p>
+						</li>
+					</div>
+
+					<!-- de developer page -->
+
+					<li class="page"><p>developer</p></li>
+					
+					<div class="ditail" id="developer">
+							<p>
+								Simon Vansuyt
+							</p>
+							<div id="share">
+								<button class="shareButton" id="facebook"></button>
+								<button class="shareButton" id="twitter"></button>
+								<button class="shareButton" id="share-more"></button>
+							</div>
+					</div>
+
+				</ul>
+			</div>
+		</div>
+		
+		<!-- overlay -->
+
+		<div id="overlay"></div>
+
+		<!-- de container -->
+
+		<div id="container">
+				
+			<!-- de klok -->
+
+			<div id="clock">
+
+				<!-- de uren -->
+
+				<div class="time" id="hour">
+
+					<!-- tweede getallen (tiende) -->
+
+					<div class="colom" id="tenHour">
+						<div class="circle"></div>
+						<div class="circle"></div>
+					</div>
+
+					<!-- eerste getallen -->
+
+					<div class="colom" id="oneHour">
+						<div class="circle"></div>
+						<div class="circle"></div>
+						<div class="circle"></div>
+						<div class="circle"></div>
+					</div>
+				</div>
+
+				<!-- de minuten -->
+			
+				<div class="time" id="minutes">
+
+					<!-- tweede getallen (tiende) -->
+
+					<div class="colom" id="tenMinutes">
+						<div class="circle"></div>
+						<div class="circle"></div>
+						<div class="circle"></div>
+					</div>
+
+					<!-- eerste getallen -->
+
+					<div class="colom" id="oneMinutes">
+						<div class="circle"></div>
+						<div class="circle"></div>
+						<div class="circle"></div>
+						<div class="circle"></div>
+					</div>
+				</div>
+
+				<!-- de secondes -->
+
+				<div class="time" id="secondes">
+
+					<!-- tweede getallen (tiende) -->
+
+					<div class="colom" id="tenSecondes">
+						<div class="circle"></div>
+						<div class="circle"></div>
+						<div class="circle"></div>
+					</div>
+
+					<!-- eerste getallen -->
+
+					<div class="colom" id="oneSecondes">
+						<div class="circle"></div>
+						<div class="circle"></div>
+						<div class="circle"></div>
+						<div class="circle"></div>					
+					</div>
+				</div>
+
+				<!-- de millieSec -->
+
+				<div class="time" id="millieSec">
+
+					<!-- eerste de tiend van een seconde -->
+
+					<div class="colom" id="tenMillieSec">
+						<div class="circle"></div>
+						<div class="circle"></div>
+						<div class="circle"></div>
+						<div class="circle"></div>					
+					</div>
+				</div>
+			</div>
+
+			<!-- dit p element zorgt er voor dat we de lappen gemakkelijk kunnen toenen in gewonen mode -->
+
+			<p id="lapextra"></p>
+
+			<!-- de button's rij -->
+
+			<div id="buttons">
+
+				<img class="button" id="lapen" src="img/lap.gif" alt="" width="50px">
+				<button class="button" id="startPause">Start</button>	
+				<img class="button" id="reset" src="img/trash.gif" alt="" width="50px">
+
+			</div>
+			
+			<!-- de toeren -->
+
+			<div id="toeren">
+
+				<!-- hier komen de lappen als je op klikt -->
+			
+			</div>
+		</div>
+	</body>
+</html>

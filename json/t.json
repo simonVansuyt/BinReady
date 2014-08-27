@@ -1,0 +1,11 @@
+{
+	"1" : "#tenMillieSec .circle:last",
+	"2" : "#tenMillieSec .circle:nth-child(3)",
+	"3" : "#tenMillieSec .circle:last, #tenMillieSec .circle:nth-child(3)",
+	"4" : "#tenMillieSec .circle:nth-child(2)",
+	"5" : "#tenMillieSec .circle:last, #tenMillieSec .circle:nth-child(2)",
+	"6" : "#tenMillieSec .circle:nth-child(3), #tenMillieSec .circle:nth-child(2)",
+	"7" : "#tenMillieSec .circle:last, #tenMillieSec .circle:nth-child(3), #tenMillieSec .circle:nth-child(2)",
+	"8" : "#tenMillieSec .circle:first",
+	"9" : "#tenMillieSec .circle:first, #tenMillieSec .circle:last"
+}
